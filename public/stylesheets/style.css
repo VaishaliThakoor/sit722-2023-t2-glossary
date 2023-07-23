@@ -1,0 +1,18 @@
+/* public/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+

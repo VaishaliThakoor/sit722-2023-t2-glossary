@@ -1,0 +1,43 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+      table-layout: auto;
+
+    }
+  </style>
+</head>
+<body>
+  <h1><%= title %></h1>
+
+  <h2>Glossary</h2>
+  <div class="table-container">
+    <table style="width:100%" id="glossary">
+      <tr>
+        <th >ID</th>
+        <th>Term</th>
+        <th>Description</th>
+        <th>References</th>
+      </tr>
+      <% for (let item of glossaries) { %>
+        <tr>
+          <td><%= item.id %></td>
+          <td><%= item.term %></td>
+          <td><%= item.description %></td>
+          <td><%= item.reference %></td>
+        </tr>
+        <tr class="table-divider">
+          <td colspan="4"></td>
+        </tr>
+      <% } %>
+    </table>
+  </div>
+</body>
+</html>
+
+
